@@ -4,7 +4,7 @@ A comprehensive collection of production-ready slash commands for [Claude Code](
 
 ## Overview
 
-This repository provides **56 production-ready slash commands** (15 workflows, 41 tools) that extend Claude Code's capabilities through:
+This repository provides **57 production-ready slash commands** (15 workflows, 42 tools) that extend Claude Code's capabilities through:
 
 - **Workflows**: Multi-agent orchestration systems that coordinate complex, multi-step operations across different domains
 - **Tools**: Specialized single-purpose utilities for focused development tasks
@@ -78,7 +78,6 @@ Workflows implement multi-agent orchestration patterns for complex, cross-domain
 | `git-workflow` | Version control process automation | Branching strategies, commit standards, PR templates |
 | `improve-agent` | Agent optimization | Prompt engineering, performance tuning |
 | `legacy-modernize` | Codebase modernization | Architecture migration, dependency updates, pattern refactoring |
-| `ml-pipeline` | Machine learning pipeline construction | Data engineering, model training, deployment |
 | `multi-platform` | Cross-platform development | Web, mobile, desktop coordination |
 | `workflow-automate` | CI/CD pipeline automation | Build, test, deploy, monitor |
 
@@ -92,19 +91,26 @@ Workflows implement multi-agent orchestration patterns for complex, cross-domain
 | `performance-optimization` | System-wide optimization | Profiling, caching, query optimization, load testing |
 | `incident-response` | Production issue resolution | Diagnostics, root cause analysis, hotfix deployment |
 
-### Tools (41 commands)
+### Tools (42 commands)
 
 Tools provide focused, single-purpose utilities for specific development operations. Each tool is optimized for its domain with production-ready implementations.
 
-#### AI and Machine Learning (5 tools)
+#### AI and Machine Learning (4 tools)
 
 | Command | Functionality | Key Features |
 |---------|--------------|--------------|
 | `ai-assistant` | AI assistant implementation | LLM integration, conversation management, context handling |
 | `ai-review` | ML code review | Model architecture validation, training pipeline review |
 | `langchain-agent` | LangChain agent creation | RAG patterns, tool integration, memory management |
-| `ml-pipeline` | ML pipeline construction | Data processing, training, evaluation, deployment |
 | `prompt-optimize` | Prompt engineering | Performance testing, cost optimization, quality metrics |
+
+#### Agent Collaboration (3 tools)
+
+| Command | Focus | Highlights |
+|---------|-------|-----------|
+| `multi-agent-review` | Multi-perspective code reviews | Architecture, security, and quality assessments |
+| `multi-agent-optimize` | Coordinated performance optimization | Database, application, and frontend tuning |
+| `smart-debug` | Assisted debugging | Root-cause analysis with performance-aware escalation |
 
 #### Architecture and Code Quality (4 tools)
 
@@ -123,7 +129,7 @@ Tools provide focused, single-purpose utilities for specific development operati
 | `data-validation` | Data quality | Schema validation, anomaly detection, constraint checking |
 | `db-migrate` | Database migrations | Schema versioning, zero-downtime strategies, rollback plans |
 
-#### DevOps and Infrastructure (6 tools)
+#### DevOps and Infrastructure (5 tools)
 
 | Command | Domain | Implementation |
 |---------|--------|----------------|
@@ -132,7 +138,6 @@ Tools provide focused, single-purpose utilities for specific development operati
 | `k8s-manifest` | Kubernetes configuration | Deployments, services, ingress, autoscaling, security policies |
 | `monitor-setup` | Observability | Metrics, logging, tracing, alerting rules |
 | `slo-implement` | SLO/SLI definition | Error budgets, monitoring, automated responses |
-| `workflow-automate` | Pipeline automation | CI/CD, GitOps, infrastructure as code |
 
 #### Testing and Development (6 tools)
 
