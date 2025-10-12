@@ -16,9 +16,9 @@ This repository provides **57 production-ready slash commands** (15 workflows, 4
 
 ## Installation
 
-> **Note**: This repository uses the **slash commands** pattern. For a more modern approach, consider using the [**Plugin Marketplace**](https://github.com/wshobson/agents) instead, which provides the same functionality through a cleaner plugin architecture that's likely to become the standard approach in the future.
+> **Note**: This repository uses the **slash commands** pattern. For a more modern approach, consider the [**Plugin Marketplace**](https://github.com/wshobson/agents) which provides similar functionality through a cleaner plugin architecture.
 
-### Option 1: Slash Commands (This Repository)
+### Slash Commands (This Repository)
 
 ```bash
 # Navigate to Claude configuration directory
@@ -28,9 +28,7 @@ cd ~/.claude
 git clone https://github.com/wshobson/commands.git
 ```
 
-### Option 2: Plugin Marketplace (Recommended)
-
-The [Plugin Marketplace](https://github.com/wshobson/agents) provides equivalent functionality through a modern plugin system:
+### Plugin Marketplace (Alternative)
 
 ```bash
 # Add the plugin marketplace
@@ -40,23 +38,7 @@ The [Plugin Marketplace](https://github.com/wshobson/agents) provides equivalent
 /plugin install claude-code-essentials
 ```
 
-**Available Plugin Collections:**
-- `claude-code-essentials` - Core development tools and agents
-- `full-stack-development` - Complete web/mobile development suite
-- `security-hardening` - Security scanning and auditing tools
-- `data-ml-pipeline` - Data engineering and ML operations
-- `infrastructure-devops` - Cloud infrastructure and deployment automation
-- And many more...
-
-For a complete list, visit the [Plugin Marketplace](https://github.com/wshobson/agents).
-
-## Slash Commands vs Plugins
-
-**Slash Commands** (this repository): The original pattern for extending Claude Code through markdown-based command files.
-
-**Plugins** (marketplace): The newer, more structured approach that provides better organization, discoverability, and is likely to become the primary extension method.
-
-**Choose one approach** - they are not designed to be used together.
+Available collections include: `claude-code-essentials`, `full-stack-development`, `security-hardening`, `data-ml-pipeline`, `infrastructure-devops`, and more.
 
 ## Command Invocation
 
