@@ -12,10 +12,13 @@ This repository provides **57 production-ready slash commands** (15 workflows, 4
 ## System Requirements
 
 - [Claude Code](https://docs.anthropic.com/en/docs/claude-code) installed and configured
-- [Claude Code Subagents](https://github.com/wshobson/agents) collection for workflow orchestration capabilities
 - Git for repository management
 
 ## Installation
+
+> **Note**: This repository uses the **slash commands** pattern. For a more modern approach, consider using the [**Plugin Marketplace**](https://github.com/wshobson/agents) instead, which provides the same functionality through a cleaner plugin architecture that's likely to become the standard approach in the future.
+
+### Option 1: Slash Commands (This Repository)
 
 ```bash
 # Navigate to Claude configuration directory
@@ -23,10 +26,37 @@ cd ~/.claude
 
 # Clone the commands repository
 git clone https://github.com/wshobson/commands.git
-
-# Clone the agents repository (required for workflow execution)
-git clone https://github.com/wshobson/agents.git
 ```
+
+### Option 2: Plugin Marketplace (Recommended)
+
+The [Plugin Marketplace](https://github.com/wshobson/agents) provides equivalent functionality through a modern plugin system:
+
+```bash
+# Add the plugin marketplace
+/plugin marketplace add https://github.com/wshobson/agents
+
+# Install plugin collections
+/plugin install claude-code-essentials
+```
+
+**Available Plugin Collections:**
+- `claude-code-essentials` - Core development tools and agents
+- `full-stack-development` - Complete web/mobile development suite
+- `security-hardening` - Security scanning and auditing tools
+- `data-ml-pipeline` - Data engineering and ML operations
+- `infrastructure-devops` - Cloud infrastructure and deployment automation
+- And many more...
+
+For a complete list, visit the [Plugin Marketplace](https://github.com/wshobson/agents).
+
+## Slash Commands vs Plugins
+
+**Slash Commands** (this repository): The original pattern for extending Claude Code through markdown-based command files.
+
+**Plugins** (marketplace): The newer, more structured approach that provides better organization, discoverability, and is likely to become the primary extension method.
+
+**Choose one approach** - they are not designed to be used together.
 
 ## Command Invocation
 
@@ -445,9 +475,9 @@ Each slash command is a markdown file with the following characteristics:
 
 ### Source Repositories
 
-- [Command Collection](https://github.com/wshobson/commands)
-- [Agent Collection](https://github.com/wshobson/agents)
-- [Claude Code Repository](https://github.com/anthropics/claude-code)
+- [Command Collection](https://github.com/wshobson/commands) - Slash commands repository
+- [Plugin Marketplace](https://github.com/wshobson/agents) - AI agents and workflow plugins
+- [Claude Code Repository](https://github.com/anthropics/claude-code) - Official Claude Code CLI
 
 ### Integration Examples
 
